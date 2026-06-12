@@ -1,0 +1,4 @@
+services:
+  - type: web
+    name: my-ai-agent
+    env: docker
