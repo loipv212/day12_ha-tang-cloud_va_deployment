@@ -107,17 +107,17 @@ python app.py
 
 | Feature | Basic | Advanced | Tại sao quan trọng? |
 |---------|-------|----------|---------------------|
-| Config | Hardcode | Env vars | ... |
-| Health check |  |  | ... |
-| Logging | print() | JSON | ... |
-| Shutdown | Đột ngột | Graceful | ... |
+| Config | Hardcode | Env vars | Tránh lộ secrets (bảo mật), dễ dàng đổi port/cấu hình theo môi trường (linh hoạt) |
+| Health check | Không có | Có endpoints | Giúp cloud platform tự động restart nếu app lỗi, hoặc biết khi nào app sẵn sàng nhận traffic |
+| Logging | print() | JSON logging | Hệ thống quản lý log (Datadog, AWS CloudWatch) dễ dàng parse và truy vấn thông tin |
+| Shutdown | Đột ngột | Graceful | Giúp các request đang được xử lý hoàn thành xong trước khi container thực sự tắt |
 
 ###  Checkpoint 1
 
-- [ ] Hiểu tại sao hardcode secrets là nguy hiểm
-- [ ] Biết cách dùng environment variables
-- [ ] Hiểu vai trò của health check endpoint
-- [ ] Biết graceful shutdown là gì
+- [v] Hiểu tại sao hardcode secrets là nguy hiểm
+- [v] Biết cách dùng environment variables
+- [v] Hiểu vai trò của health check endpoint
+- [v] Biết graceful shutdown là gì
 
 ---
 
